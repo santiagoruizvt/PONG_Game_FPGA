@@ -34,7 +34,7 @@ module Pixel_Generator(
     //Registros para trackear los bordes
     reg [9:0] y_pad_reg,y_pad_next;
     //Velocidad del PADDLE al moverse
-    parameter PAD_VELOCITY = 15;
+    parameter PAD_VELOCITY = 20;
     
     //PELOTA
     parameter BALL_SIZE = 8;
@@ -90,7 +90,7 @@ module Pixel_Generator(
     //Asignación de colores para los objetos
     assign wall_rgb = 16'hFFFF; //Pared color blanco
     assign pad_rgb = 16'hFFFF; //Pad color blanco
-    assign ball_rgb = 12'hFFFF; //Pelota color blanco
+    assign ball_rgb = 16'hFFFF; //Pelota color blanco
     assign background_rgb = 16'h0000;
     
     //Asignaciones para el PADDLE
